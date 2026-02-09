@@ -31,5 +31,5 @@ ax.invert_yaxis()
 ax.legend()
 plt.show()
 
-year = st.slider("Select year", 2022, 2023, 2024，2025)
+year = st.slider("Select year", 2022, 2023, 2024,2025)
 df_year = df[df["year"] == year]
