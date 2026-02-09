@@ -9,10 +9,12 @@ Original file is located at
 
 import pandas as pd
 
-df = pd.read_excel("rcel M4.xlsx")
+df = pd.read_excel("data/rcel M4.xlsx")
 
 df_2024 = df[df["year"] == 2024]
 
+import os
+st.write("Files in app directory:", os.listdir())
 import matplotlib.pyplot as plt
 
 apps = df_2024["app"]
